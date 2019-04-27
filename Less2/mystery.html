@@ -1,0 +1,35 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+
+    var answer = "ель"
+    var answerCount = 0
+    var userAnswer =prompt("Отгадайте загадку: Зимой и летом одним цветом (слово из 3 букв)");
+
+    if (userAnswer.toLowerCase() == answer) {
+        alert("Поздравляю, Вы угадали!")
+        answerCount++
+    }
+    else
+        alert('Ответ не верный! Правильный ответ: '+ answer)
+
+    var answer2 = "лук"
+    var userAnswer2 =prompt("Отгадайте загадку: Сидит дед во сто шуб одет (слово из 3 букв)");
+
+    if (userAnswer2.toLowerCase() == answer2) {
+        alert("Поздравляю, Вы угадали!")
+        answerCount++
+    }
+    else
+        alert('Ответ не верный! Правильный ответ: '+ answer2)
+
+    var answer3 = "сом"
+    var userAnswer3 =prompt("Отгадайте загадку: На дне, где тихо и темно, лежит усатое бревно. (слово из 3 букв)");
+
+    if (userAnswer3.toLowerCase() == answer3) {
+        alert("Поздравляю, Вы угадали!")
+        answerCount++
+    }
+    else
+        alert('Ответ не верный! Правильный ответ: '+ answer3)
+    alert("Игра окончена! Вы отгадали " + answerCount + " загадку(ки)");
+</script>
