@@ -1,0 +1,17 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+
+    alert("Программа для расчета суммы депозита на 5-м году вклада.")
+
+    var deposit = +prompt("Введите сумму вклада: ");
+    var perсent = +prompt("Введите годовой процент вклада: ");
+    var profit = 0;
+    var yearProfit = 0;
+
+    document.write("При системе сложного процента и непополняемого депазита:" + "<br>")
+
+    for (var yaerCount = 1; yaerCount <= 5; yaerCount++) {
+        yaerProfit = (deposit * (1 + perсent * 0.01) ** yaerCount).toFixed(2)
+        document.write("на конец " + yaerCount + " года сумма вклада составит: " + yaerProfit + "<br>");
+            }
+</script>
