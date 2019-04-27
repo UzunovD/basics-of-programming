@@ -6,11 +6,14 @@
     var deposit = +prompt("Введите сумму вклада: ");
     var perсent = +prompt("Введите годовой процент вклада: ");
     var yearProfit = 0;
+    var yaer = 5
 
-    document.write("При системе сложного процента и непополняемого депазита:" + "<br>")
+    document.write("Сумма вклада: " + deposit + " рублей" + "<br>")
+    document.write("Процент: " + perсent + "<br>" + "<br>")
+    document.write("При системе сложного процента и непополняемого депазита:" + "<br>" + "<br>")
 
-    for (var yaerCount = 1; yaerCount <= 5; yaerCount++) {
+    for (var yaerCount = 1; yaerCount <= yaer; yaerCount++) {
         yaerProfit = (deposit * (1 + perсent * 0.01) ** yaerCount).toFixed(2)
-        document.write("на конец " + yaerCount + " года сумма вклада составит: " + yaerProfit + "<br>");
+        document.write("на конец " + yaerCount + " года сумма вклада составит: " + yaerProfit + " рублей <br>");
             }
 </script>
