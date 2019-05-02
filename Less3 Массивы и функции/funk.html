@@ -1,0 +1,64 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+
+    function getArray(n) {
+        var arr = [];
+        var _ = 0
+        for (var i = 0; i < n; i++) {
+            _ += 1
+            arr.push(_);
+        }
+        return arr;
+    }
+
+    function getSumArray(array) {
+        var sum = 0;
+        for (var i = 0; i < array.length; i++) {
+            sum = sum + array[i]
+        }
+        return sum;
+    }
+
+    function getMax(array) {
+        var max = 0;
+        for (var i = 1; i < array.length; i++) {
+            if (array[i - 1] > array[i]) {
+                max = array[i - 1];
+            } else {
+                max = array[i];
+            }
+        }
+        return max;
+    }
+
+    function getMin(array) {
+        var min = 0;
+        for (var i = 1; i < array.length; i++) {
+            if (array[i - 1] < array[i]) {
+                min = array[i - 1];
+            } else {
+                min = array[i];
+            }
+        }
+        return min;
+    }
+
+    function getEven(array) {
+        var arrEven = [];
+        for (var i = 0; i < array.length; i++) {
+            if (array[i] % 2 == 0) {
+                arrEven.push(array[i]);
+            }
+        }
+        return arrEven;
+    }
+
+    alert(getArray(5));
+    alert(getSumArray([3,2,8,1,9]));
+    alert(getSumArray(getArray(6)));
+    alert(getMax([3,2,8,1,9]));
+    alert(getMin([3,2,8,1,9]));
+    alert(getEven([3,2,8,1,9]));
+
+
+</script>

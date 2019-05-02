@@ -1,0 +1,35 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+
+function compareAnswer(userAnswer, answer) {
+    if (contains(answer, userAnswer) == true) {
+        alert("Поздравляю, Вы угадали!")
+        return answerCount++
+    }
+    else
+        alert('Ответ не верный! Правильный ответ: '+ answer)
+}
+
+function contains(answer, userAnswer) {
+    for (var i = 0; i < answer.length; i++) {
+        if (answer[i] == userAnswer.toLowerCase()) {
+            return true;
+        }
+    }
+}
+
+var answer = ["ель","сосна","елка","пихта"]
+var answerCount = 0
+var userAnswer = prompt("Отгадайте загадку: Зимой и летом одним цветом.");
+compareAnswer(userAnswer, answer)
+
+answer = ["лук","лук репчатый", "лучок"]
+userAnswer =prompt("Отгадайте загадку: Сидит дед во сто шуб одет.");
+compareAnswer(userAnswer, answer)
+
+answer = ["сом","рыба сом"]
+userAnswer =prompt("Отгадайте загадку: На дне, где тихо и темно, лежит усатое бревно.");
+compareAnswer(userAnswer, answer)
+
+alert("Игра окончена! Вы отгадали " + answerCount + " загадку(ки)");
+</script>
